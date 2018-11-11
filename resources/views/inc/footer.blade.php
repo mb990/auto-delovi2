@@ -9,11 +9,12 @@
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="/">Почетна</a></li>
                 <li class="list-inline-item"><a href="/o-nama">O нама</a></li>
-                <li class="list-inline-item"><a href="/usluge">Услуге</a></li>
+                {{-- <li class="list-inline-item"><a href="/usluge">Услуге</a></li> --}}
                 <li class="list-inline-item"><a href="/proizvodi">Производи</a></li>
                 <li class="list-inline-item"><a href="/kontakt">Контакт</a></li>
+                <li class="list-inline-item"><a href="/polisa-privatnosti">Полиса приватности</a></li>
             </ul>
-            <p class="copyright">Copyright © 2018<i class="icon ion-social-snapchat"></i></p>
+            <p class="copyright">Copyright © <?php echo date('Y') ?><i class="icon ion-social-snapchat"></i></p>
         </footer>
     </div>
 

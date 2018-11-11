@@ -25,4 +25,8 @@ class PagesController extends Controller
     public function about(){
     	return view('o-nama');
     }
+
+    public function polisa(){
+        return view('polisa');
+    }
 }
