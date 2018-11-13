@@ -24,6 +24,7 @@
                 <div class="intro" style="padding-top:48px;">
                     <h2 class="text-center">@yield('heading')</h2>
                 </div>
+                   
                     @yield('content')
             @else
                 <div class="intro" style="padding-top:48px;">

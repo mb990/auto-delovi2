@@ -129,6 +129,15 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+        'ime' => [
+            'required' => 'Morate uneti ime.' 
+        ],
+        'email' => [
+            'required' => 'Morate uneti email.' 
+        ],
+        'poruka' => [
+            'required' => 'Morate uneti poruku.' 
+        ],
     ],
 
     /*
