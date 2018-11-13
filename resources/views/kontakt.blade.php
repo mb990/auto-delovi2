@@ -24,11 +24,18 @@
                 	</div>	
                 	<div>
 	                	{!! Form::label('email', 'Email адреса') !!} <br>
-	                	{!! Form::text('email', '', ['class' => 'form-control','placeholder' => 'Email']) !!}
+	                	{!! Form::email('email', '', ['class' => 'form-control','placeholder' => 'Email']) !!}
 	                	@if($errors->has('email'))
 	                		<p class="text-warning invalid-feedback"><strong>{{ $errors->first('email') }}</strong></p>
 	                	@endif <br>
 	                </div>
+                    <div class="form-group">
+                        {!! Form::label('naslov', 'Наслов') !!} </br>
+                        {{ Form::text('naslov', '', ['class' => 'form-control','placeholder' => 'Наслов поруке']) }}
+                        @if($errors->has('naslov'))
+                            <p class="text-warning invalid-feedback"><strong>{{ $errors->first('naslov') }}</strong></p>
+                        @endif
+                    </div>  
 	                <div>
 	                	{!! Form::label('poruka', 'Порука') !!} <br>
 	                	{!! Form::textarea('poruka', '', ['class' => 'form-control','placeholder' => 'Порука']) !!}

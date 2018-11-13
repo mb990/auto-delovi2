@@ -1,1 +1,3 @@
-{{$poruka}}
+<div class="text-center">
+	{{$poruka}}
+</div>

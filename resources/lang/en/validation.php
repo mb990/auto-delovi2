@@ -130,13 +130,16 @@ return [
             'rule-name' => 'custom-message',
         ],
         'ime' => [
-            'required' => 'Morate uneti ime.' 
+            'required' => 'Молимо унесите име.' 
         ],
         'email' => [
-            'required' => 'Morate uneti email.' 
+            'required' => 'Молимо унесите email адресу.' 
+        ],
+        'naslov' => [
+            'required' => 'Молимо унесите наслов поруке.' 
         ],
         'poruka' => [
-            'required' => 'Morate uneti poruku.' 
+            'required' => 'Молимо унесите поруку.' 
         ],
     ],
 

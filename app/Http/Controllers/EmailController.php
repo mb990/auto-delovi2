@@ -11,6 +11,7 @@ class EmailController extends Controller
     	$this->validate($request, [
     		'ime' => 'required',
     		'email' => 'required',
+            'naslov' => 'required',
     		'poruka' => 'required'
     	]);
 
@@ -19,7 +20,7 @@ class EmailController extends Controller
     	], function($mail) use ($request){
     		$mail->from($request->email, $request->ime);
 
-    		$mail->to('stayforff@gmail.com')->subject('Nova TR PLUS poruka');
+    		$mail->to('stayforff@gmail.com')->subject('Нова ТР-ПЛУС порука - ' . $request->naslov);
     	});
 
     	return redirect()->back()->with('flash_message', 'Ваша порука је послата.');
