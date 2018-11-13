@@ -30,6 +30,13 @@
 	                	@endif <br>
 	                </div>
                     <div class="form-group">
+                        {!! Form::label('telefon', 'Број телефона') !!} </br>
+                        {{ Form::text('telefon', '', ['class' => 'form-control','placeholder' => 'Број телефона']) }}
+                        @if($errors->has('telefon'))
+                            <p class="text-warning invalid-feedback"><strong>{{ $errors->first('telefon') }}</strong></p>
+                        @endif
+                    </div>  
+                    <div class="form-group">
                         {!! Form::label('naslov', 'Наслов') !!} </br>
                         {{ Form::text('naslov', '', ['class' => 'form-control','placeholder' => 'Наслов поруке']) }}
                         @if($errors->has('naslov'))
