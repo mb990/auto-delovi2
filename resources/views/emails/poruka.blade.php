@@ -1,3 +1,3 @@
 <div class="text-center">
-	{{$poruka}}
+	<?php echo 123 ?>	
 </div>

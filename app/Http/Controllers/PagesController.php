@@ -29,4 +29,5 @@ class PagesController extends Controller
     public function polisa(){
         return view('polisa');
     }
+
 }

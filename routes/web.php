@@ -17,5 +17,6 @@ Route::get('/kontakt', 'PagesController@kontakt');
 Route::get('/proizvodi', 'PagesController@proizvodi')->name('proizvodi');
 Route::get('/o-nama', 'PagesController@about');
 Route::get('/polisa-privatnosti', 'PagesController@polisa');
+Route::get('/poruka', 'EmailController@poruka');
 
 Route::post('kontakt/posalji', 'EmailController@posalji');
