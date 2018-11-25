@@ -18,11 +18,12 @@ class EmailController extends Controller
 
     	Mail::send('emails.poruka', [
             'email' => $request->email,
+            'telefon' => $request->telefon,
     		'poruka' => $request->poruka
     	], function($mail) use ($request){
     		$mail->from($request->email, $request->ime, $request->telefon);
 
-    		$mail->to('stayforff@gmail.com')->subject('Нова ТР-ПЛУС порука - ' . $request->naslov . ' Телефон: ' . $request->telefon);
+    		$mail->to('stayforff@gmail.com')->subject('Нова ТР-ПЛУС порука - ' . $request->naslov);
     	}
         );
 
