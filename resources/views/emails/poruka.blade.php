@@ -1,4 +1,6 @@
 <div class="text-center">
 		
-{{$poruka}}
+	{{$email}} <br><br>
+	{{$poruka}}
+
 </div>

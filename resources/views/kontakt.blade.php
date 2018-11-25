@@ -29,13 +29,6 @@
 	                		<p class="text-warning invalid-feedback"><strong>{{ $errors->first('email') }}</strong></p>
 	                	@endif <br>
 	                </div>
-                    <div>
-                        {!! Form::label('email', 'Поновите Email адресу') !!} *<br>
-                        {!! Form::email('ponovo_email', '', ['class' => 'form-control','placeholder' => 'Email']) !!}
-                        @if($errors->has('email'))
-                            <p class="text-warning invalid-feedback"><strong>{{ $errors->first('email') }}</strong></p>
-                        @endif <br>
-                    </div>
                     <div class="form-group">
                         {!! Form::label('telefon', 'Број телефона') !!} *</br>
                         {{ Form::text('telefon', '', ['class' => 'form-control','placeholder' => 'Број телефона']) }}
