@@ -16,35 +16,42 @@
                 		<div class="alert alert-success">{{ Session::get('flash_message') }}</div>
                 	@endif
                 	<div class="form-group">
-	                	{!! Form::label('ime', 'Име') !!} </br>
+	                	{!! Form::label('ime', 'Име') !!} *</br>
 	                	{{ Form::text('ime', '', ['class' => 'form-control','placeholder' => 'Име']) }}
 	                	@if($errors->has('ime'))
 	                		<p class="text-warning invalid-feedback"><strong>{{ $errors->first('ime') }}</strong></p>
 	                	@endif
                 	</div>	
                 	<div>
-	                	{!! Form::label('email', 'Email адреса') !!} <br>
+	                	{!! Form::label('email', 'Email адреса') !!} *<br>
 	                	{!! Form::email('email', '', ['class' => 'form-control','placeholder' => 'Email']) !!}
 	                	@if($errors->has('email'))
 	                		<p class="text-warning invalid-feedback"><strong>{{ $errors->first('email') }}</strong></p>
 	                	@endif <br>
 	                </div>
+                    <div>
+                        {!! Form::label('email', 'Поновите Email адресу') !!} *<br>
+                        {!! Form::email('ponovo_email', '', ['class' => 'form-control','placeholder' => 'Email']) !!}
+                        @if($errors->has('email'))
+                            <p class="text-warning invalid-feedback"><strong>{{ $errors->first('email') }}</strong></p>
+                        @endif <br>
+                    </div>
                     <div class="form-group">
-                        {!! Form::label('telefon', 'Број телефона') !!} </br>
+                        {!! Form::label('telefon', 'Број телефона') !!} *</br>
                         {{ Form::text('telefon', '', ['class' => 'form-control','placeholder' => 'Број телефона']) }}
                         @if($errors->has('telefon'))
                             <p class="text-warning invalid-feedback"><strong>{{ $errors->first('telefon') }}</strong></p>
                         @endif
                     </div>  
                     <div class="form-group">
-                        {!! Form::label('naslov', 'Наслов') !!} </br>
+                        {!! Form::label('naslov', 'Наслов') !!} *</br>
                         {{ Form::text('naslov', '', ['class' => 'form-control','placeholder' => 'Наслов поруке']) }}
                         @if($errors->has('naslov'))
                             <p class="text-warning invalid-feedback"><strong>{{ $errors->first('naslov') }}</strong></p>
                         @endif
                     </div>  
 	                <div>
-	                	{!! Form::label('poruka', 'Порука') !!} <br>
+	                	{!! Form::label('poruka', 'Порука') !!} *<br>
 	                	{!! Form::textarea('poruka', '', ['class' => 'form-control','placeholder' => 'Порука']) !!}
 	                	@if($errors->has('poruka'))
 	                		<p class="text-warning invalid-feedback"><strong>{{ $errors->first('poruka') }}</strong></p>
