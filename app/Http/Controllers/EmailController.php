@@ -22,7 +22,6 @@ class EmailController extends Controller
     		'poruka' => $request->poruka
     	], function($mail) use ($request){
     		$mail->from($request->email, $request->ime, $request->telefon);
-
     		$mail->to('stayforff@gmail.com')->subject('Нова ТР-ПЛУС порука - ' . $request->naslov);
     	}
         );
