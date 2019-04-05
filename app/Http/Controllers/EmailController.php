@@ -17,6 +17,7 @@ class EmailController extends Controller
     	]);
 
     	Mail::send('emails.poruka', [
+			'ime' => $request->ime,
             'email' => $request->email,
             'telefon' => $request->telefon,
     		'poruka' => $request->poruka

@@ -1,8 +1,8 @@
 <div class="text-center">
-		
-	Email: {{$email}} <br><br>
-	Telefon: {{$telefon}}<br><br>
-	Poruka: <br>
+	<strong>Ime:</strong> {{$ime}} <br><br>	
+	<strong>Email:</strong> {{$email}} <br><br>
+	<strong>Telefon:</strong> {{$telefon}}<br><br>
+	<strong>Poruka:</strong> <br>
 	{{$poruka}}
 
 </div>
